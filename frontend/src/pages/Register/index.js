@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import {Link, useHistory} from 'react-router-dom';
 import { FiArrowLeft} from 'react-icons/fi';
 import './styles.css';
-import logoImg from '../../assets/logo.svg';
+import logoImg from '../../assets/logoHelpUs.png';
 import api from '../../services/api';
 
 
@@ -42,9 +42,9 @@ export default function Register(){
         <div className="register-container">
             <div className="content">
                 <section>
-                    <img src = {logoImg} alt= "Be The Heroes"/>
+                    <img src = {logoImg} alt= "Be The Heroes" width="420" height="120"/>
                     <h1>Cadastro</h1>
-                    <p>Faça seu cadastro, entre na plataforma e ajude  pessoas a encontrarem os casos da sua ONG.</p>
+                    <p>Faça seu cadastro, entre na plataforma e encontre sua ajuda.</p>
                     
                     <Link className="back-link"  to="/">
                         <FiArrowLeft size={16} color="#E02041"/>

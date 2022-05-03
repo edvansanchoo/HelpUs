@@ -4,7 +4,7 @@ import React, {useState} from 'react';
 import {Link, useHistory} from 'react-router-dom';
 import { FiLogIn} from 'react-icons/fi';
 import './styles.css';
-import logoImg from '../../assets/logo.svg';
+import logoImg from '../../assets/logoHelpUs.png';
 import heroesImg from '../../assets/heroes.png';
 import api from '../../services/api';
 
@@ -30,10 +30,10 @@ export default function Logon(){
     return (
         <div className="logon-conteiner">
             <section className="form">
-                <img src = {logoImg} alt= "Be The Heroes"/>
+                <img src = {logoImg} id="logoImg" alt= "Be The Heroes" width="420" height="120"/>
 
                 <form onSubmit= {handleLogin}>
-                    <h1>Faça seu logon</h1>
+                    <h1>Faça seu login</h1>
 
                     <input 
                         placeholder="Sua ID"
@@ -48,7 +48,7 @@ export default function Logon(){
                     </Link>
                 </form>
             </section>
-            <img src= {heroesImg} alt= "Heroes"/>
+            <img src= {heroesImg}/>
         </div>
     );
 }

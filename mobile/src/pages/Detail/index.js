@@ -4,7 +4,7 @@ import {Feather} from '@expo/vector-icons';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import {View, Text, Image, TouchableOpacity, Linking } from 'react-native';
 import styles from './styles';
-import logoImg from '../../assets/logo.png';
+import logoImg from '../../assets/logoHelpUs.png';
 import * as MailComposer from 'expo-mail-composer';
 
 

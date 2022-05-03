@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react';
 import {Feather} from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import {View,FlatList, Image, Text, TouchableOpacity} from 'react-native';
-import logoImg from '../../assets/logo.png';
+import logoImg from '../../assets/logoHelpUs.png';
 import styles from './styles';
 import api from '../../services/api';
 
@@ -52,7 +52,7 @@ export default function Incidents(){
     return (
         <View style={styles.container}>
             <View style={styles.header}>
-                <Image source={logoImg}/>
+                <Image source={logoImg} style={styles.logoImg}/>
                 <Text style={styles.headerText}>
                     Total de <Text style={styles.headerTextBold}>{total} casos.</Text>
                 </Text>
